@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="component/style.css">
+    <link rel="icon" type="image/jpg" href="image/images.png">
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        style="width: 300px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i
+                    class="bi bi-youtube text-danger p-2 fw-bold"></i>YouTube</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-items ">
+                    <a href="index.html" class="nav-link fw-bold gap-2 d-flex"><i class="bi bi-house-door-fill"
+                            style="font-size: 1rem;"></i>Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="component/shorts.html" class="nav-link gap-2 d-flex"><i class="bi bi-music-note-list"
+                            style="font-size: 1rem;"></i>shorts</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://youtube.com/@broking-w9s?si=npTDT_mocJ1ilJ05" class="nav-link gap-2 d-flex"><i class='bx bxs-videos'
+                            style="font-size: 1rem;"></i>Subscriptions</a>
+                </li>
+                <li class="text mt-3">
+                    <h5>You > </h5>
+                </li>
+                <li class="nav-items">
+                    <a href="https://www.youtube.com/feed/history" class="nav-link gap-2 d-flex"><i class='bx bx-history'
+                            style="font-size: 1.5rem;"></i>History</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-2 d-flex"><i class='bx bxs-playlist'
+                            style="font-size: 1.5rem;"></i>Play
+                        lists</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-2 d-flex"><i class='bx bx-movie-play'
+                            style="font-size: 1.5rem;"></i>Video
+                        play</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-2 d-flex"><i class="bi bi-stopwatch"
+                            style="font-size: 1.5rem;"></i>Watch
+                        later</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-2 d-flex"><i class='bx bx-like' style="font-size: 1.5rem;"></i>Like
+                        videos</a>
+                </li>
+                <li class="text mt-3">
+                    <h5>Subscribtions</h5>
+                </li>
+                <li class="nav-items">
+                    <a href="https://youtu.be/_9ELMrLwkCY?si=IUXQ42MjLa9YoxWm" class="nav-link gap-2 d-flex"><img
+                            src="https://yt3.ggpht.com/ytc/AIdro_khn9vxrzaAyrwaUXCVgWhIVQEgWqhmcigl4QG1ghTmj54=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" style="width: 35px;margin-top: -5px;"> Vannda Official</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://youtu.be/c8-5768VVh4?si=SLRuLQI9I1dShHRT" class="nav-link gap-2 d-flex"><img
+                            src="https://yt3.ggpht.com/ytc/AIdro_khn9vxrzaAyrwaUXCVgWhIVQEgWqhmcigl4QG1ghTmj54=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" style="width: 35px;margin-top: -5px;"> Vannda Official</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://youtu.be/cp8F0D68qKA?si=M3La7Yc-ACg2qD3Z" class="nav-link gap-2 d-flex"><img
+                            src="https://yt3.ggpht.com/ytc/AIdro_khn9vxrzaAyrwaUXCVgWhIVQEgWqhmcigl4QG1ghTmj54=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" style="width: 35px;margin-top: -5px;"> Vannda Official</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://youtu.be/IBFnxWjtF2g?si=iXBlpuIqzKYEFQ5L" class="nav-link gap-2 d-flex"><img
+                            src="https://yt3.ggpht.com/ytc/AIdro_khn9vxrzaAyrwaUXCVgWhIVQEgWqhmcigl4QG1ghTmj54=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" style="width: 35px;margin-top: -5px;"> Vannda Official</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-4 d-flex"><i class='bx bx-menu fs-3'></i>All subscribtions</a>
+                </li>
+                <li class="text mt-3">
+                    <h5>Explor</h5>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-4 d-flex"><i class="bi bi-fire "></i>All subscribtions</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-4 d-flex"><i class="bi bi-music-note-beamed"></i>Music</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-4 d-flex"><i class="bi bi-controller"></i>gamming</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link gap-4 d-flex"><i class="bi bi-trophy"></i>Sports</a>
+                </li>
+                <li class="text mt-3">
+                    <h5>More from YouTube</h5>
+                </li>
+                <li class="nav-items">
+                    <a href="https://www.youtube.com/premium" class="nav-link gap-2 d-flex"><img
+                            src="https://youtubepremium.app/images/app-icon-youtube_65cbd.png" alt=""
+                            style="width: 35px;margin-top: -5px;"> YouTube Premuim</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://www.youtube.com/hashtag/stuido" class="nav-link gap-2 d-flex"><img
+                            src="https://static.vecteezy.com/system/resources/previews/017/396/826/non_2x/youtube-studio-icons-free-png.png"
+                            alt="" style="width: 35px;margin-top: -5px;"> YouTube Studio</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://music.youtube.com/" class="nav-link gap-2 d-flex"><img
+                            src="https://play-lh.googleusercontent.com/76AjYITcB0dI0sFqdQjNgXQxRMlDIswbp0BAU_O5Oob-73b6cqKggVlAiNXQAW5Bl1g=w600-h300-pc0xffffff-pd"
+                            alt="" style="width: 35px;margin-top: -5px;"> YouTube Music</a>
+                </li>
+                <li class="nav-items">
+                    <a href="https://www.youtube.com/kids/" class="nav-link gap-2 d-flex"><img
+                            src="https://e7.pngegg.com/pngimages/834/95/png-clipart-youtube-kids-child-mobile-app-youtube-emblem-child-thumbnail.png"
+                            alt="" style="width: 35px;margin-top: -5px;"> YouTube Kids</a>
+                </li>
+
+                <li class="nav-items mt-3  ">
+                    <a href="" class="nav-link gap-2 d-flex "><i class="bi bi-gear fs-4"></i>Settings</a>
+                </li>
+                <li class="nav-items   ">
+                    <a href="" class="nav-link gap-2 d-flex "><i class="bi bi-flag fs-4"></i>Report History</a>
+                </li>
+                <li class="nav-items   ">
+                    <a href="" class="nav-link gap-2 d-flex "><i class="bi bi-question-circle fs-4"></i>Help</a>
+                </li>
+                <li class="nav-items   ">
+                    <a href="" class="nav-link gap-2 d-flex "><i class='bx bx-comment-error fs-4'></i>Sent feedback</a>
+                </li>
+                <li class="nav-items text-lead">
+                    <p>About Press Copyright <br>Contact us Creators <br> Advertise Develops</p>
+                </li>
+                <li class="nav-items text-lead">
+                    <p>Terms Privacy Policy & Safety <br>How YouTube works <br>Test new features</p>
+                </li>
+                <li class="text-lead" style="font-size: 13px;">
+                    <p>© 2025 Google LLC</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar  navbar-light bg-light sticky-top" id="navbar">
+        <div class="container-fluid">
+
+            <div class="container-noneNav">
+                <div class="container-nav d-flex align-items-center">
+                    <div class="container-btn">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            style="border: none;outline: none;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div>
+                        <a class="navbar-brand align-items-center d-flex gap-2 fw-bold" href="#">
+                            <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png"
+                                alt="" style="width: 35px;">
+
+                            YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container align-items-center" id="container-input" role="search">
+                <div class="container-concel-search">
+                    <div class="container-concel">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="volumn​​ d-flex w-100">
+                    <div class="search-container d-flex position-relative w-100 me-2">
+                        <input type="text" class="form-control rounded-pill w-100" placeholder="Search">
+                        <button class="btn search-button position-absolute end-0 me-2" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                    <div class="voice justify-content-center align-items-center">
+                        <button class="mic-button">
+                            <i class="bi bi-mic-fill text-dark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="containerNoneAll" id="containerNone">
+                <div class="container-right d-flex gap-2">
+                    <div class="container-icon-search">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="create d-flex justify-content-center align-items-center">
+                        <button type="text" class="form-control rounded-pill d-flex align-items-center me-3"><i
+                                class='bx bx-plus fs-3'></i>Create</button>
+                        <button type="text" class="noti position-relative"
+                            style="outline: none;border: none;border-radius: 50%;"><i class="bi bi-bell fs-4"></i> <span
+                                class="position-absolute fw-bold text-white rounded-5"
+                                style="font-size: 12px; width: 25px; background-color: red; right: -5%; display: inline-flex; justify-content: center; align-content: center;">9+</span></button>
+                        <img src="https://yt3.ggpht.com/bgEwIZpfi77qmP24qECJkllbWr1WWJ1Gtic4OFU0SQeqeeDdUNgMMn164a2L6YPNunRNstQ=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px;margin-left:10px;" data-bs-toggle="modal"
+                            data-bs-target="#modal">
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-body p-5 p-sm-0">
+                    <div class="container">
+                        <button type="button" class="btn-close" id="btn-closes" data-bs-dismiss="modal" aria-label="Close" ></button>
+                        <div class="row">
+                            <div class="col overflow-y-scroll w-100 vh-100" id="scroll">
+                                <div class="list-group" id="itemScroll">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <img src="https://yt3.ggpht.com/bgEwIZpfi77qmP24qECJkllbWr1WWJ1Gtic4OFU0SQeqeeDdUNgMMn164a2L6YPNunRNstQ=s48-c-k-c0x00ffffff-no-rj"
+                                            alt="" class="rounded-circle">
+                                        <div class="list-item d-flex flex-column">
+                                            <span>DK GAMMING</span>
+                                            <span>@dk_gamming-u9x</span>
+                                        </div>
+                                        <a href="" class="text-decoration-none">View your channel</a>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action ">
+                                        <span class="icon"><i class="material-icons">person</i></span> Google
+                                        Account
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">switch_account</i></span>
+                                        Switch account
+                                        <span class="float-right">&gt;</span> </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">logout</i></span> Sign out
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">videocam</i></span> YouTube
+                                        Studio
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">attach_money</i></span>
+                                        Purchases and memberships
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">info</i></span> Your data
+                                        in YouTube
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">brightness_4</i></span>
+                                        Appearance: Device theme
+                                        <span class="float-right">&gt;</span> </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">translate</i></span>
+                                        Language: English
+                                        <span class="float-right">&gt;</span> </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">security</i></span>
+                                        Restricted Mode: Off
+                                        <span class="float-right">&gt;</span> </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">location_on</i></span>
+                                        Location: Cambodia
+                                        <span class="float-right">&gt;</span> </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">keyboard</i></span>
+                                        Keyboard shortcuts
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">settings</i></span>
+                                        Settings
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">help</i></span> Help
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <span class="icon"><i class="material-icons">feedback</i></span> Send
+                                        feedback
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/2C0bfsznvnI?si=013yp78MDixwZL0H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>LEAN PANHCHAKNITH Diss Track vs ZEDES😈</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/CwKJzYPRxLpwRCXBarGFxA5nVVHp1EMQ78mE6mutU5DMPP0oeW2qLvI5VSd9VKGPH2iqQFXaNg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>Tep piseth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/53MR3b38UkE?si=ZzzXa4gW3KaGudWc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>TEP PISETH ~ គយគន់ព្រះច័ន្ទ ' Lyrics (Color Coded Lyrics)</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/CwKJzYPRxLpwRCXBarGFxA5nVVHp1EMQ78mE6mutU5DMPP0oeW2qLvI5VSd9VKGPH2iqQFXaNg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>Tep piseth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/_lMdBP6wLxU?si=UDE0kwFhvdtncIyI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>OGGolden - The Old Me ( Official Music ) 🔥</h6>
+                    <div class="foot d-flex gap-2 align-items-center">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_kQb66_r-tkBEn2iZDFhJ2GG4iHBNhSUfLuMmYXH4kfLpzB1eRO46tXEjwegiB59Ph2gg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>PNN TV Official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/hs53RyJaJ0g?si=G1MDFr8VomlpiVpt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>TEPPISETH - ភក្ដីស្នេហ៍​ ( ​Official Audio )</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/CwKJzYPRxLpwRCXBarGFxA5nVVHp1EMQ78mE6mutU5DMPP0oeW2qLvI5VSd9VKGPH2iqQFXaNg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>Tep piseth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/bebNhxu4wsE?si=bMbaKXBDxzF-BrQH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>OG GOLDEN-ឥឡូវខ្ញុំឡូយ | RAPPER FIGHTER -FINAL ROUND</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_kQb66_r-tkBEn2iZDFhJ2GG4iHBNhSUfLuMmYXH4kfLpzB1eRO46tXEjwegiB59Ph2gg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>PNN TV Official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/Y1NtlyAYiC4?si=SJNmK5PZHWszVGjV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>អ+ូ+ន - EMI (Rapper Fighter/Fighter Strike)</h6>
+                    <div class="food d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/fKEtf7kDWR1wbh5jchYjD3vdQzMx_yFjiWgBdiG97QTEtDV-TdkT_UsndLAfzURH3rhwVXDWk30=s48-c-k-c0x00ffffff-no-rj"
+                            alt="" class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>RAPPER FIGHTER OFFICIAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/23r2uL6TNBA?si=uAiqxFgxIcQ9wiy1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>READ YOUR MIND ច្រៀងដោយ YUNG JX ​ វគ្គ🔥 FIGHTER STRIKE🔥 សប្ដាហ៍ទី 01</h6>
+                    <div class="food d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/fKEtf7kDWR1wbh5jchYjD3vdQzMx_yFjiWgBdiG97QTEtDV-TdkT_UsndLAfzURH3rhwVXDWk30=s48-c-k-c0x00ffffff-no-rj"
+                            alt="" class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>RAPPER FIGHTER OFFICIAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/PLWh3H_gqqY?si=o0ziMqQP5EbE6sKP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>មេវគ្គបញ្ចប់ ច្រៀងដោយ ---LONG BUNN ----វគ្គ🔥 FIGHTER STRIKE🔥 សប្ដាហ៍ទី ០៣</h6>
+                    <div class="food d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/fKEtf7kDWR1wbh5jchYjD3vdQzMx_yFjiWgBdiG97QTEtDV-TdkT_UsndLAfzURH3rhwVXDWk30=s48-c-k-c0x00ffffff-no-rj"
+                            alt="" class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>RAPPER FIGHTER OFFICIAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/An7KbU7gQuc?si=3kp5DIFiNKv3RNiP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>ខ្លាំងប៉ះខ្លាំង តើនរណាជាអ្នកខ្លាំងពិតប្រាកដ នៅក្នុងវគ្គនេះ 🔥🔥</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/ytc/AIdro_kQb66_r-tkBEn2iZDFhJ2GG4iHBNhSUfLuMmYXH4kfLpzB1eRO46tXEjwegiB59Ph2gg=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>PNN TV Official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/w92zYIJyKjs?si=3m2bmSKmBWCoZNXB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>GOOFY - PRAY FOR ME (Official Visualizer)</h6>
+                    <div class="foot d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/wmIBP9ZWEBIf81NVOxMxMOCrpdEwAv2PP0rLUh495eO8Y2lsqz8y8aZ5GiF7Qm_0xJAS1tsdxA=s48-c-k-c0x00ffffff-no-rj"
+                            class="rounded-circle" alt="" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>Goofy Official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/6bTjz05lpAY?si=fM3s1wjmJG-6QCqc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>អ្នកប្រលែងស៊ីម៉ង់ត៏ ច្រៀងដោយ 72 YANG --- វគ្គ🔥 FIGHTER STRIKE🔥 សប្ដាហ៍ទី ០៣</h6>
+                    <div class="food d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/fKEtf7kDWR1wbh5jchYjD3vdQzMx_yFjiWgBdiG97QTEtDV-TdkT_UsndLAfzURH3rhwVXDWk30=s48-c-k-c0x00ffffff-no-rj"
+                            alt="" class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>RAPPER FIGHTER OFFICIAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-12 col-md-6 d-flex gap-4 mt-lg-2 mt-sm-4 flex-column">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/RnJSpAevCek?si=VOB1k4Jv1A9voups"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="img flex-column gap-2">
+                    <h6>KWAN - នឹក | Miss Ft. ESCÁREZ, MFATT (Remix) [Official visualizer]</h6>
+                    <div class="food d-flex gap-2">
+                        <img src="https://yt3.ggpht.com/HZqljSuEjDgWaycU3E_QNaaQPhYg_qC1k5rt64ldKdUazGDKZkjdlF3bDIAwZT-0XIEcZJzhxt4=s48-c-k-c0x00ffffff-no-rj"
+                            alt="" class="rounded-circle" style="width: 35px; height: 40px;">
+                        <div class="content-p mt-2">
+                            <p>KWAN OFFICIAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js.js"></script>
+</body>
+
+</html>
